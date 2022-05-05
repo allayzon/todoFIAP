@@ -62,3 +62,11 @@ function deleteTask(index) {
     localStorage.setItem('New Todo', JSON.stringify(ListArr))
     showTasks()
 }
+
+//Vamos criar uma função que deleta todas as funções 
+deleteAllBtn.onclick = _ => {
+    ListArr = [] //Array vazio
+    //Após deletar todas as tarefas atualizar novamente o armazenamento local
+    localStorage.setItem('New Todo', JSON.stringify(ListArr))
+    showTasks()
+}
